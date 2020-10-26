@@ -15,3 +15,5 @@
 *** 
 Зміни не були внеcені, до синхронізації з Web-версією, за допомогою git pull.
 ***
+**10**
+![alt text](https://images.wallpaperscraft.ru/image/tesla_model_s_tesla_mashina_142847_1280x960.jpg)
