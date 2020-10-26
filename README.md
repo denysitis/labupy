@@ -8,3 +8,5 @@
 Створив гілку  branch-lab-one. За допомогою команди git checkout  branch-lab-one переключився на неї.
 ***
 **5** Немає змін у файлі Readme.md
+***
+**7** Проблему вирішено за допомогою git merge main в гілці branch-lab-one
