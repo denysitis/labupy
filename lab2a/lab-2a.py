@@ -26,8 +26,8 @@ except ValueError:
 finally:
     print("Це всеодно працює")
 #5
-#with open("README.md", "w") as f:
- #   f.write("test text")
+with open("README.md", "w") as f:
+   f.write("test text")
 #6
 add = lambda x, y: x + y
 print (add ('Denys', ' Balazh'))
