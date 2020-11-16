@@ -1,5 +1,6 @@
 import requests
 import ntplib
+import time
 from datetime import datetime
 
 
@@ -39,10 +40,18 @@ def main(url=''):
     return True
 
 
-def home_work():
-    # Ваш захист
-    pass
+def date_time():
+    nowTime = datetime.time(datetime.now())
+    nowTime.time
+    if nowTime.time < 12
+        print("Доброго дня")
+        value="success"
+    else
+        print("Доброго вечора")
+        value="success"
+    return value
 
+date_time()
 
 def my_good_fun():
     return "success"
