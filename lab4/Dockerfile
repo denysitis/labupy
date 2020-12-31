@@ -1,4 +1,5 @@
-FROM python:3.8-slim
+  
+FROM python:3.9-slim
 
 LABEL author="Denys"
 LABEL version=1.0
@@ -16,8 +17,8 @@ WORKDIR /lab
 RUN git clone https://github.com/denysitis/labupy.git
 
 # Створюємо остаточну робочу папку з Веб-сайтом та копіюємо туди файли
-WORKDIR /app
-RUN cp -r /lab/devops_course/lab3/* .
+#WORKDIR /app
+RUN cp -r labupy/lab3/* .
 
 # Інсталюємо всі залежності
 RUN pipenv install
