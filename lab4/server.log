@@ -1,0 +1,9 @@
+INFO 2020-12-31 20:05:47,091 : Сервер доступний. Час на сервері: 2020-12-31T20:05:47.089
+INFO 2020-12-31 20:05:47,092 : Запитувана сторінка: : http://127.0.0.1:8000/health/
+INFO 2020-12-31 20:05:47,092 : Відповідь сервера місти наступні поля:
+INFO 2020-12-31 20:05:47,092 : Ключ: date, Значення: 2020-12-31T20:05:47.089
+INFO 2020-12-31 20:05:47,092 : Ключ: current_page, Значення: http://127.0.0.1:8000/health/
+INFO 2020-12-31 20:05:47,092 : Ключ: server_info, Значення: {'system': 'nt', 'user': 'Den'}
+INFO 2020-12-31 20:05:47,093 : Ключ: client_info, Значення: python-requests/2.25.0
+ERROR 2020-12-31 20:06:49,102 : Сервер недоступний. Помилка: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DA0241DC70>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+ERROR 2020-12-31 20:07:51,111 : Сервер недоступний. Помилка: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DA02405730>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))

@@ -23,8 +23,5 @@ RUN cp -r labupy/lab3/* .
 # Інсталюємо всі залежності
 RUN pipenv install
 
-# Відкриваємо порт 8000 на зовні
-EXPOSE 8000
-
 # Це команда яка виконається при створенні контейнера
-ENTRYPOINT ["pipenv", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
+ENTRYPOINT ["pipenv", "run", "python", "monitoring.py"]
