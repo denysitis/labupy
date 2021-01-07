@@ -1,5 +1,5 @@
 FROM python:3.7-alpine
-LABEL author="Bohdan Buhyl"
+LABEL author="DenysBalazh"
 
 # оновлюємо систему та встановлюємо потрібні пакети
 RUN apk update \
@@ -15,5 +15,5 @@ RUN pipenv install -r requirements.txt
 
 # Копіюємо нашого проекту
 COPY tests/ ./
-
-ENTRYPOINT pipenv run pytest test_app.py --url http://app:5000
+#ENTRYPOINT pipenv run pytest ./tests/test_app.py --url http://localhost:5000
+ENTRYPOINT pipenv run pytest ./test_app.py --url http://app:5000

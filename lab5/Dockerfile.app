@@ -1,5 +1,5 @@
 FROM python:3.7-alpine
-LABEL author="Bohdan Buhyl"
+LABEL author="DenysBalazh"
 
 # оновлюємо систему та встановлюємо потрібні пакети
 RUN apk update \
@@ -20,5 +20,5 @@ COPY my_app/ ./
 RUN mkdir logs
 
 EXPOSE 5000
-
-ENTRYPOINT pipenv run python app.py
+#ENTRYPOINT pipenv run python ./my_app/app.py
+ENTRYPOINT pipenv run python ./app.py

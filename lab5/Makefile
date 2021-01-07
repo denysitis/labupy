@@ -1,5 +1,5 @@
 STATES := app tests
-REPO := bobas/lab4-examples
+REPO := denysitis/labpy4
 
 .PHONY: $(STATES)
 
@@ -12,7 +12,11 @@ run:
 	&& docker run --rm --name app --net=appnet -p 5000:5000 -d $(REPO):app
 
 test-app:
-	@docker run --rm -it --name test --net=appnet $(REPO):tests
+	@docker run --rm -it --name tests --net=appnet $(REPO):tests
+
+docker-push:
+	@docker push $(REPO):app
+	@docker push $(REPO):tests
 
 docker-prune:
 	@docker rm $$(docker ps -a -q) --force || true \
@@ -21,4 +25,6 @@ docker-prune:
 	&& docker network prune --force \
 	&& docker image prune --force
 
+docker-delete:
+	@docker rmi --force $$(docker images -q)
 
